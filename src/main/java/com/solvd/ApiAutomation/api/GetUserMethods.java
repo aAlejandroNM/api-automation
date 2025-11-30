@@ -20,6 +20,7 @@ public class GetUserMethods extends AbstractApiMethodV2 {
     }
 
     public void validateResponse() {
-        super.validateResponse(JSONCompareMode.LENIENT, JsonCompareKeywords.ARRAY_CONTAINS.getKey() + "$");
+        super.validateResponse(JSONCompareMode.STRICT, 
+            JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 }

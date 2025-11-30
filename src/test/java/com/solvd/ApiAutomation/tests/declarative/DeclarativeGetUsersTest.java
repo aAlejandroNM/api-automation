@@ -18,7 +18,8 @@ public class DeclarativeGetUsersTest implements IAbstractTest {
         var apiMethod = userTemplate.getUsers();
         apiMethod.replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
         apiMethod.callAPIExpectSuccess();
-        apiMethod.validateResponse(JSONCompareMode.LENIENT, JsonCompareKeywords.ARRAY_CONTAINS.getKey() + "$");
+        apiMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
+        // apiMethod.validateResponseAgainstSchema("api/users/_get/rs.schema");
     }
 }
 

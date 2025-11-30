@@ -13,6 +13,7 @@ public class GetUsersTest implements IAbstractTest {
         GetUserMethods api = new GetUserMethods();
         api.callAPIExpectSuccess();
         api.validateResponse();
+        // api.validateResponseAgainstSchema("api/users/_get/rs.schema");
     }
 }
 

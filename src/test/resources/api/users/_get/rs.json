@@ -1,25 +1,71 @@
 [
-    {
-        "id": "skip",
-        "name": "skip",
-        "username": "skip",
-        "email": "skip",
-        "address": {
-            "street": "skip",
-            "suite": "skip",
-            "city": "skip",
-            "zipcode": "skip",
-            "geo": {
-                "lat": "skip",
-                "lng": "skip"
-            }
-        },
-        "phone": "skip",
-        "website": "skip",
-        "company": {
-            "name": "skip",
-            "catchPhrase": "skip",
-            "bs": "skip"
-        }
+  {
+    "id": "regex:[\\d]+",
+    "name": "type:String",
+    "username": "regex:[a-zA-Z0-9_]+",
+    "email": "regex:[a-zA-Z0-9._]+@[a-z]+\\.[a-z]{2,4}",
+    "address": {
+      "street": "type:String",
+      "suite": "skip",
+      "city": "skip",
+      "zipcode": "regex:[\\d-]+",
+      "geo": {
+        "lat": "type:String",
+        "lng": "type:String"
+      }
+    },
+    "phone": "type:String",
+    "website": "regex:[a-z0-9.]+",
+    "company": {
+      "name": "type:String",
+      "catchPhrase": "skip",
+      "bs": "skip"
     }
+  },
+  {
+    "id": "regex:[\\d]+",
+    "name": "type:String",
+    "username": "regex:[a-zA-Z0-9._]+",
+    "email": "regex:[a-zA-Z0-9._]+@[a-z]+\\.[a-z]{2,4}",
+    "address": {
+      "street": "type:String",
+      "suite": "skip",
+      "city": "skip",
+      "zipcode": "regex:[\\d-]+",
+      "geo": {
+        "lat": "type:String",
+        "lng": "type:String"
+      }
+    },
+    "phone": "type:String",
+    "website": "regex:[a-z0-9.]+",
+    "company": {
+      "name": "type:String",
+      "catchPhrase": "skip",
+      "bs": "skip"
+    }
+  },
+  {
+    "id": "regex:[\\d]+",
+    "name": "type:String",
+    "username": "regex:[a-zA-Z0-9._]+",
+    "email": "regex:[a-zA-Z0-9._]+@[a-z]+\\.[a-z]{2,4}",
+    "address": {
+      "street": "type:String",
+      "suite": "skip",
+      "city": "skip",
+      "zipcode": "regex:[\\d-]+",
+      "geo": {
+        "lat": "type:String",
+        "lng": "type:String"
+      }
+    },
+    "phone": "type:String",
+    "website": "regex:[a-z0-9.]+",
+    "company": {
+      "name": "type:String",
+      "catchPhrase": "skip",
+      "bs": "skip"
+    }
+  }
 ]
