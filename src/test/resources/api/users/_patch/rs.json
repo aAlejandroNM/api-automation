@@ -1,0 +1,23 @@
+{
+    "id": "skip",
+    "name": "${name}",
+    "username": "skip",
+    "email": "${email}",
+    "address": {
+        "street": "skip",
+        "suite": "skip",
+        "city": "skip",
+        "zipcode": "skip",
+        "geo": {
+            "lat": "skip",
+            "lng": "skip"
+        }
+    },
+    "phone": "skip",
+    "website": "skip",
+    "company": {
+        "name": "skip",
+        "catchPhrase": "skip",
+        "bs": "skip"
+    }
+}
