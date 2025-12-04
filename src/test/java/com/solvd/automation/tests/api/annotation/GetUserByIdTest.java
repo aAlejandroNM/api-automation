@@ -1,4 +1,4 @@
-package com.solvd.automation.tests.annotation;
+package com.solvd.automation.tests.api.annotation;
 
 import com.solvd.automation.api.GetUserByIdMethod;
 import com.zebrunner.carina.core.IAbstractTest;

@@ -1,4 +1,4 @@
-package com.solvd.automation.tests.declarative;
+package com.solvd.automation.tests.api.declarative;
 
 import com.solvd.automation.api.declarative.IUserApi;
 import com.zebrunner.carina.api.binding.TemplateFactory;
@@ -7,15 +7,14 @@ import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import com.zebrunner.carina.utils.config.Configuration;
 import org.testng.annotations.Test;
 
-public class DeclarativePatchUserTest implements IAbstractTest {
+public class DeclarativeGetUserByIdTest implements IAbstractTest {
 
     @Test
     @MethodOwner(owner = "api-automation")
-    public void testPatchUserDeclarative() {
+    public void testGetUserByIdDeclarative() {
         IUserApi userTemplate = TemplateFactory.prepareTemplate(IUserApi.class);
-        var apiMethod = userTemplate.patchUser("1");
+        var apiMethod = userTemplate.getUserById("1");
         apiMethod.replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
-        apiMethod.setProperties("api/users/user.properties");
         apiMethod.callAPIExpectSuccess();
         apiMethod.validateResponse();
     }

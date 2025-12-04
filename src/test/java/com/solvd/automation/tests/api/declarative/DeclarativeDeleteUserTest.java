@@ -1,4 +1,4 @@
-package com.solvd.automation.tests.declarative;
+package com.solvd.automation.tests.api.declarative;
 
 import com.solvd.automation.api.declarative.IUserApi;
 import com.zebrunner.carina.api.binding.TemplateFactory;

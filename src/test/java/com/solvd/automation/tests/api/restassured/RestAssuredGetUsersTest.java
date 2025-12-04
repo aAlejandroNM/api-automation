@@ -1,4 +1,4 @@
-package com.solvd.automation.tests.restassured;
+package com.solvd.automation.tests.api.restassured;
 
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;

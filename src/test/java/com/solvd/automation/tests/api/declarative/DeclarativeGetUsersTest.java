@@ -1,22 +1,25 @@
-package com.solvd.automation.tests.declarative;
+package com.solvd.automation.tests.api.declarative;
 
 import com.solvd.automation.api.declarative.IUserApi;
+import com.zebrunner.carina.api.apitools.validation.JsonCompareKeywords;
 import com.zebrunner.carina.api.binding.TemplateFactory;
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import com.zebrunner.carina.utils.config.Configuration;
+import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.testng.annotations.Test;
 
-public class DeclarativeGetUserByIdTest implements IAbstractTest {
+public class DeclarativeGetUsersTest implements IAbstractTest {
 
     @Test
     @MethodOwner(owner = "api-automation")
-    public void testGetUserByIdDeclarative() {
+    public void testGetAllUsersDeclarative() {
         IUserApi userTemplate = TemplateFactory.prepareTemplate(IUserApi.class);
-        var apiMethod = userTemplate.getUserById("1");
+        var apiMethod = userTemplate.getUsers();
         apiMethod.replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
         apiMethod.callAPIExpectSuccess();
-        apiMethod.validateResponse();
+        apiMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
+        // apiMethod.validateResponseAgainstSchema("api/users/_get/rs.schema");
     }
 }
 
