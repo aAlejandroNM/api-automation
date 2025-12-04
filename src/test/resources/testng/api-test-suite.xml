@@ -6,32 +6,32 @@
 
     <test name="Annotation-Based API Tests">
         <classes>
-            <class name="com.solvd.ApiAutomation.tests.annotation.GetUsersTest"/>
-            <class name="com.solvd.ApiAutomation.tests.annotation.GetUserByIdTest"/>
-            <class name="com.solvd.ApiAutomation.tests.annotation.PostUserTest"/>
-            <class name="com.solvd.ApiAutomation.tests.annotation.PutUserTest"/>
-            <class name="com.solvd.ApiAutomation.tests.annotation.DeleteUserTest"/>
+            <class name="com.solvd.automation.tests.annotation.GetUsersTest"/>
+            <class name="com.solvd.automation.tests.annotation.GetUserByIdTest"/>
+            <class name="com.solvd.automation.tests.annotation.PostUserTest"/>
+            <class name="com.solvd.automation.tests.annotation.PutUserTest"/>
+            <class name="com.solvd.automation.tests.annotation.DeleteUserTest"/>
         </classes>
     </test>
 
     <test name="Declarative API Tests">
         <classes>
-            <class name="com.solvd.ApiAutomation.tests.declarative.DeclarativeGetUsersTest"/>
-            <class name="com.solvd.ApiAutomation.tests.declarative.DeclarativeGetUserByIdTest"/>
-            <class name="com.solvd.ApiAutomation.tests.declarative.DeclarativePostUserTest"/>
-            <class name="com.solvd.ApiAutomation.tests.declarative.DeclarativePutUserTest"/>
-            <class name="com.solvd.ApiAutomation.tests.declarative.DeclarativePatchUserTest"/>
-            <class name="com.solvd.ApiAutomation.tests.declarative.DeclarativeDeleteUserTest"/>
+            <class name="com.solvd.automation.tests.declarative.DeclarativeGetUsersTest"/>
+            <class name="com.solvd.automation.tests.declarative.DeclarativeGetUserByIdTest"/>
+            <class name="com.solvd.automation.tests.declarative.DeclarativePostUserTest"/>
+            <class name="com.solvd.automation.tests.declarative.DeclarativePutUserTest"/>
+            <class name="com.solvd.automation.tests.declarative.DeclarativePatchUserTest"/>
+            <class name="com.solvd.automation.tests.declarative.DeclarativeDeleteUserTest"/>
         </classes>
     </test>
 
     <test name="Rest Assured API Tests">
         <classes>
-            <class name="com.solvd.ApiAutomation.tests.restassured.RestAssuredGetUsersTest"/>
-            <class name="com.solvd.ApiAutomation.tests.restassured.RestAssuredPostUserTest"/>
-            <class name="com.solvd.ApiAutomation.tests.restassured.RestAssuredPutUserTest"/>
-            <class name="com.solvd.ApiAutomation.tests.restassured.RestAssuredPatchUserTest"/>
-            <class name="com.solvd.ApiAutomation.tests.restassured.RestAssuredDeleteUserTest"/>
+            <class name="com.solvd.automation.tests.restassured.RestAssuredGetUsersTest"/>
+            <class name="com.solvd.automation.tests.restassured.RestAssuredPostUserTest"/>
+            <class name="com.solvd.automation.tests.restassured.RestAssuredPutUserTest"/>
+            <class name="com.solvd.automation.tests.restassured.RestAssuredPatchUserTest"/>
+            <class name="com.solvd.automation.tests.restassured.RestAssuredDeleteUserTest"/>
         </classes>
     </test>
 </suite>
